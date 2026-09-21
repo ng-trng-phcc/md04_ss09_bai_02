@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pharmacy_db
+    username: postgres
+    password: postgres
+app:
+  branch-name: "Nha Thuoc So 1"
+  hotline: "19001234"

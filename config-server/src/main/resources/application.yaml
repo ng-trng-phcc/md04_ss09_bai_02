@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        composite:
+          - type: git
+            uri: file:///home/white_ember/Code/md04/ss07/medical-config-repo
+            default-label: main
+          - type: git
+            uri: https://github.com/ng-trng-phcc/pharmacy-service-config
+            default-label: main
+        # primary git repo for pharmacy-service-config (GitHub) - fallback file repo for local testing
+        # git.uri: https://github.com/ng-trng-phcc/pharmacy-service-config
+server:
+  port: 8888
